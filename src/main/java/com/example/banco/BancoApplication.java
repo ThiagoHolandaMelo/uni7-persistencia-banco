@@ -149,15 +149,15 @@ public class BancoApplication {
 													ClienteRepository clienteRepository,
 													AgenciaRepository agenciaRepository) {
 		return (args) -> {
-			/*
+			
 			Agencia agenciaAldeota = agenciaRepository.findByNome("Aldeota");
 			
 			
-			List<Movimentacoes> movimentacoes = (List<Movimentacoes>)movimentacoesRepository.findAllForAgencia(agenciaAldeota.getNome());
+			List<Movimentacoes> movimentacoes = (List<Movimentacoes>)movimentacoesRepository.findByContacorrenteAgencia(agenciaAldeota);
 			
 			System.out.println("Listando Movimentações da agencia: " + agenciaAldeota.getNome() );
 			movimentacoes.forEach(System.out::println);
-			*/
+			
 			
 		};
 	}

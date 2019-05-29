@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
+import com.example.banco.db.Agencia;
 import com.example.banco.db.ContaCorrente;
 import com.example.banco.db.Movimentacoes;
 
@@ -13,5 +14,5 @@ public interface MovimentacoesRepository extends CrudRepository<Movimentacoes, L
 	List<Movimentacoes> findByContacorrente(ContaCorrente contacorrente);
 	
 	//@Query("SELECT m FROM movimentacoes m WHERE m.contacorrente.agencia.nome = ?1")
-	//List<Movimentacoes> findAllForAgencia(String agenciaName);
+	List<Movimentacoes> findByContacorrenteAgencia(Agencia agencia);
 }

@@ -32,4 +32,38 @@ public class Movimentacoes {
 	
 	@ManyToOne(fetch = FetchType.EAGER, optional = false)
 	private ContaCorrente contacorrente;
+	
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+
+	public ContaCorrente getContacorrente() {
+		return contacorrente;
+	}
+
+	public void setContacorrente(ContaCorrente contacorrente) {
+		this.contacorrente = contacorrente;
+	}
+
+	@Override
+	public String toString() {
+		
+		return "Agencia: " + this.getContacorrente().getAgencia().getNome() +
+				"\n Cliente: " + this.getContacorrente().getCliente().getNome() + 
+				"\n Valor aplicado: " + this.getValor() + 
+				"\n\n";
+	}
 }

@@ -17,3 +17,13 @@ DIA 27/05
 	❖ Mediar e regular a conclusão do projeto.
 	❖ Tirar dúvidas e fazer os ajustes necessários.
 	❖ Atendimento individual dos grupos.
+	
+	
+	
+	
+	
+	
+delete FROM bancario.agencias where id>=1;
+delete FROM bancario.clientes where id>=1;
+delete FROM bancario.contacorrente where id>=1;
+delete FROM bancario.movimentacoes where id>=1;
