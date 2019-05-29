@@ -1,0 +1,19 @@
+DIA 27/05
+1. Implementar um projeto utilizando Spring Data.
+2. O código fonte deverá ficar hospedado no github.com;
+3. Deverá ser implementado um sistema bancário:
+	a. Cadastro de clientes:
+		▪ Pessoa física ou pessoa jurídica
+	b. Cadastro de agência;
+	c. Cadastro de conta corrente;
+	d. Movimentação da conta corrente: saques e depósitos;
+	e. Transferências entre contas correntes do banco;
+	f. Relatório com as movimentações financeiras:
+		▪ Por período: dia, mês, ano;
+		▪ Por agência;
+		▪ Por cliente;
+
+4. Todos os membros da equipe devem estar presentes no dia da apresentação.
+	❖ Mediar e regular a conclusão do projeto.
+	❖ Tirar dúvidas e fazer os ajustes necessários.
+	❖ Atendimento individual dos grupos.
